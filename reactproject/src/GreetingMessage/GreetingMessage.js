@@ -3,16 +3,24 @@ import './GreetingMessage.css'
 const flag = false;
 const message = "hello world";
 class GreetingMessage extends React.Component {  
-
-    buttonClickEventHandler(event) {
-        console.log(event.target.className);
+    constructor(){
+        super();
+        this.state = {
+            message : "initial message"
+        };
     }
+   
+    buttonClickEventHandler(buttonMessage) {
+        console.log(this);
+        console.log(buttonMessage);
+    }
+ 
     render() {
         return <div className = "messageContainer">
             <h1> Greeting Message</h1>
             <div className = "message">{(flag ===  true) ? "hello" : "world"}</div>
             <button className = "getBtn" 
-            onClick = {this.buttonClickEventHandler}>Get</button>
+            onClick = {this.buttonClickEventHandler("get button")}>Get</button>
             <button className = "submitBtn" 
             onClick = {this.buttonClickEventHandler}>Submit</button>
             <button className = "resetBtn" 

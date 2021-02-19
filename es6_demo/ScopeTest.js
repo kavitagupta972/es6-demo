@@ -20,13 +20,11 @@
 // printMessage()
 // console.log(message1);
 
-const message = "constant value";
-const message = "jk";
-//message = "jkjk";
+// const message = "constant value";
+// //message = "jkjk";
 
 
-function printMessage(){
-    const message1 = "jdkf";
-    console.log(message1);
-}
-console.log(message1);
+// function printMessage(){
+//     const message1 = "jdkf";
+//     console.log(message1);
+// }

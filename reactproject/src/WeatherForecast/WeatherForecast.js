@@ -11,6 +11,7 @@ function WeatherForecast (){
     const flag = true;
     const message = "hello world";
     function buttonClickEventHandler(event) {
+        const vall = btn
         console.log(event.target.className);
     }
 
@@ -19,8 +20,8 @@ function WeatherForecast (){
     <div className = "message">{message}</div>
     {/* conditional rendering */}
     {flag && btnNames.map( (btnName) => {
-       return <button key = {btnName} className={btnName} 
-        onClick={buttonClickEventHandler}>{btnName}</button>
+       return <button key = {btnName} className={btnName} id = {btnName}
+        onClick={() => console.log("button clicked")}>{btnName}</button>
     })}
     {/* <button className = "getBtn" 
     onClick = {buttonClickEventHandler}>Get</button>
